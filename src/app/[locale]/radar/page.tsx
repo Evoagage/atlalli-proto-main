@@ -5,6 +5,8 @@ import { useTranslations } from 'next-intl';
 import { useStore } from '@/store/useStore';
 import LocationDetailOverlay from '@/components/LocationDetailOverlay';
 import dynamic from 'next/dynamic';
+// FIX: Import data at the top instead of using require() inside the component
+import locationsData from '@/data/locations.json';
 
 // Dynamic import for Leaflet map to avoid SSR issues
 const DiscoveryMap = dynamic(() => import('@/components/DiscoveryMap'), {
@@ -27,10 +29,10 @@ export default function RadarPage() {
     // Local state for the detail overlay
     const [selectedLocId, setSelectedLocId] = useState<string | null>(null);
 
-    // Helper to find the full location object when a user clicks a pin
-    // (Assuming you import your locations data or fetch it)
+    // FIX: Use the imported JSON data
+    // We assume the structure matches your JSON (prototype_locations)
     const activeLocation = selectedLocId 
-        ? require('@/data/locations.json').prototype_locations.find((l: any) => l.id === selectedLocId) 
+        ? (locationsData as any).prototype_locations.find((l: any) => l.id === selectedLocId) 
         : null;
 
     return (
