@@ -7,6 +7,8 @@ import Navbar from '@/components/Navbar';
 import BotNav from '@/components/BotNav'; // Import the new component
 import ThemeClient from '@/components/ThemeClient';
 
+export const runtime = 'edge';
+
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const tenorSans = Tenor_Sans({
     weight: '400',
