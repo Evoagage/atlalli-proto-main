@@ -1,0 +1,95 @@
+[
+    {
+        "sub": "1083921034001",
+        "name": "Alex Minor",
+        "email": "alex.minor@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
+        "birthdate": "2010-05-15",
+        "role": "minor"
+    },
+    {
+        "sub": "1083921034002",
+        "name": "Sam Anonymous",
+        "email": "sam.anon@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sam",
+        "role": "anonymous"
+    },
+    {
+        "sub": "1083921034003",
+        "name": "Jordan Guest",
+        "email": "jordan.guest@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Jordan",
+        "birthdate": "1995-03-22",
+        "role": "guest"
+    },
+    {
+        "sub": "1083921034004",
+        "name": "Maria Subscriber",
+        "email": "maria.subs@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria",
+        "birthdate": "1990-11-10",
+        "role": "subscriber"
+    },
+    {
+        "sub": "1083921034005",
+        "name": "Carlos Premium",
+        "email": "carlos.premium@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Carlos",
+        "birthdate": "1985-07-04",
+        "role": "premium"
+    },
+    {
+        "sub": "1083921034006",
+        "name": "Bob Bartender",
+        "email": "bob.bar@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Bob",
+        "role": "bartender",
+        "scope": {
+            "type": "location",
+            "id": "loc_drunkendog_condesa"
+        }
+    },
+    {
+        "sub": "1083921034007",
+        "name": "Alice Manager",
+        "email": "alice.mgmt@example.com",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alice",
+        "role": "manager",
+        "scope": {
+            "type": "location",
+            "id": "loc_falling_piano_roma"
+        }
+    },
+    {
+        "sub": "1083921034008",
+        "name": "Super Admin",
+        "email": "admin@atlalli.mx",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Admin",
+        "role": "super_admin",
+        "scope": {
+            "type": "global"
+        }
+    },
+    {
+        "sub": "1083921034012",
+        "name": "Drunkendog Group Manager",
+        "email": "dd.manager@drunkendog.mx",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=DDManager",
+        "role": "manager",
+        "scope": {
+            "type": "group",
+            "id": "drunkendog"
+        }
+    },
+    {
+        "sub": "1083921034013",
+        "name": "Falling Piano Group Bartender",
+        "email": "fp.bartender@fallingpiano.mx",
+        "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=FPBartender",
+        "role": "bartender",
+        "scope": {
+            "type": "group",
+            "id": "falling_piano"
+        }
+    }
+]

@@ -1,0 +1,311 @@
+{
+    "common": {
+        "appName": "Atlalli",
+        "tagline": "Discover Your Perfect Beer",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "close": "Close",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "back": "Back",
+        "next": "Next",
+        "submit": "Submit",
+        "language": "Language",
+        "confirmReset": "Clear all prototype data?"
+    },
+    "auth": {
+        "login": "Login",
+        "logout": "Logout",
+        "selectRole": "Select Your Persona",
+        "roleSelector": {
+            "minor": "Minor (Age < 18)",
+            "anonymous": "Anonymous",
+            "guest": "Guest",
+            "subscriber": "Subscriber",
+            "premium": "Premium Member",
+            "bartender": "Bartender",
+            "manager": "Manager",
+            "super_admin": "Super Admin"
+        },
+        "accessDenied": "Access Denied",
+        "minorRestriction": "You must be 18 or older to access this application."
+    },
+    "navigation": {
+        "home": "Home",
+        "discover": "Discover",
+        "profile": "Profile",
+        "wallet": "Wallet",
+        "scanner": "Scanner",
+        "dashboard": "Dashboard",
+        "currentLocation": "Current Venue",
+        "locationsMenu": "Locations",
+        "optionsMenu": "Menu",
+        "optionsLabel": "Navigation",
+        "noLocationDetected": "No bar detected",
+        "messages": "Messages",
+        "resetData": "Reset Data"
+    },
+    "notifications": {
+        "title": "Message Center",
+        "unreadCount": "{count} unread alerts",
+        "clearAll": "Clear All",
+        "inboxEmpty": "Inbox Empty",
+        "new": "NEW"
+    },
+    "home": {
+        "subtitle": "CDMX Beer Discovery & Loyalty Prototype",
+        "locationInstruction": "Use the Location Selector above to mock your GPS position. Switch to the 'Locations' tab below to discover nearby partner venues on the map.",
+        "subtitle": "Place of Liquids",
+        "NowStreaming": "Transmisión en Vivo",
+        "locationInstruction": "..."
+    },
+    "tasteProfile": {
+        "title": "Your Taste Profile",
+        "axes": {
+            "bitter": "Bitterness",
+            "malt": "Malt",
+            "body": "Body",
+            "aromatics": "Aromatics",
+            "abv": "ABV"
+        },
+        "coldStart": {
+            "title": "Welcome to Atlalli",
+            "subtitle": "Let's find your flavor profile",
+            "start": "Get Started",
+            "skip": "Skip for now"
+        },
+        "quiz": {
+            "title": "Build Your Taste Map",
+            "familiarity": {
+                "title": "How familiar are you with craft beer?",
+                "level1": "New to Craft",
+                "level1_desc": "I know what I like (flavor-wise), but not the names.",
+                "level2": "Occasional",
+                "level2_desc": "I know some styles like IPA or Stout.",
+                "level3": "Connoisseur",
+                "level3_desc": "I know exactly what my palate wants."
+            },
+            "level1": {
+                "coffee": {
+                    "q": "How do you take your coffee?",
+                    "black": "Black / Espresso (Strong & Bitter)",
+                    "creamy": "With Cream / Latte (Smooth & Mild)"
+                },
+                "sweets": {
+                    "q": "Preferred treat?",
+                    "chocolate": "Dark Chocolate / Nuts (Rich & Roasty)",
+                    "citrus": "Citrus / Tropical Fruit (Fresh & Zesty)"
+                },
+                "intensity": {
+                    "q": "Preferred drinking style?",
+                    "bold": "Bold & Complex (Sipping slowly)",
+                    "light": "Light & Refreshing (All-day sessions)"
+                },
+                "extraPrompt": {
+                    "q": "Do you want to answer four more questions to get better recommendations?",
+                    "yes": "Yes, let's do it!",
+                    "no": "No, I'm ready."
+                },
+                "fruit": {
+                    "q": "Preferred snack?",
+                    "tropical": "Tropical Fruit / Pineapple (Bright)",
+                    "spiced": "Spices / Balsamic (Complex)"
+                },
+                "bread": {
+                    "q": "Favorite morning scent?",
+                    "toasted": "Dark Toast / Coffee (Roasty)",
+                    "fresh": "Fresh Bread / Grainy (Soft)"
+                },
+                "water": {
+                    "q": "How do you like your drinks?",
+                    "sparkling": "Sparkling / Crisp (Dry)",
+                    "smooth": "Smooth / Still (Creamy)"
+                },
+                "nature": {
+                    "q": "A walk in the...",
+                    "forest": "Pine Forest / Earthy (Woody)",
+                    "garden": "Flower Garden / Citrus (Floral)"
+                }
+            },
+            "level2": {
+                "title": "Pick a style you usually enjoy",
+                "lager": "Lager (Clean & Crisp)",
+                "wheat": "Wheat (Fruity & Creamy)",
+                "ipa": "IPA (Hoppy & Bitter)",
+                "stout": "Stout (Dark & Roasty)"
+            },
+            "level3": {
+                "title": "Tuning Your Sensory Vector",
+                "instruction": "Adjust the sliders to define your ideal beer profile."
+            },
+            "complete": "Build My Map"
+        }
+    },
+    "recommendation": {
+        "title": "Recommended For You",
+        "beers": "Beers",
+        "locations": "Locations",
+        "radius": "Discovery Radius",
+        "nearby": "{count} Nearby Locations",
+        "premiumCount": "{count} Premium",
+        "standardCount": "{count} Standard",
+        "availablePromotions": "Available Promotions",
+        "venueMatchScore": "Venue Match Score",
+        "topMatches": "Top 3 Personalized Matches",
+        "premiumPerk": "Premium Perk",
+        "activePromo": "Active Promo",
+        "viewDetails": "View Details",
+        "yourLocation": "You are here",
+        "similaritySlider": "Adventure Level",
+        "comfortZone": "Stay in my comfort zone",
+        "balanced": "Something new but familiar",
+        "adventure": "Surprise me!",
+        "notAvailable": "Beer Not Available",
+        "findAnother": "New Recommendation",
+        "showScript": "Bartender Script",
+        "getMatch": "Get Recommendation",
+        "rateADrink": "Rate a Drink",
+        "includeScript": "Include 'Bartender Script' along with the Recommendations"
+    },
+    "rating": {
+        "title": "Rate your beer",
+        "searchPlaceholder": "Search for a beer or brand...",
+        "noResults": "No beer found? Rate a style and then suggest your beer!",
+        "genericOption": "Rate a {style}",
+        "suggestLink": "Suggest a new beer to our catalog",
+        "dislike": "Not my beer",
+        "like": "Liked it",
+        "love": "Loved it",
+        "success": "Taste map updated!"
+    },
+    "suggestion": {
+        "title": "Suggest a Beer",
+        "subtitle": "Help us grow our catalog. We'll review and add it soon.",
+        "form": {
+            "name": "Beer Name",
+            "brewery": "Brewery",
+            "style": "Style (e.g. IPA)",
+            "abv": "ABV (Optional)",
+            "description": "Description (Optional)",
+            "submit": "Submit Suggestion",
+            "required": "Required information"
+        },
+        "success": {
+            "title": "Suggestion Received!",
+            "message": "Our team will verify the details. You'll be recognized as a contributor if it's added!"
+        },
+        "back": "Back to Home"
+    },
+    "location": {
+        "selectLocation": "Select Location",
+        "currentLocation": "Current Location",
+        "noLocationDetected": "No bar detected",
+        "partnerVenue": "Partner Venue",
+        "nonPartner": "Non-Partner"
+    },
+    "qr": {
+        "generateCode": "Generate QR Code",
+        "scanCode": "Scan QR Code",
+        "expired": "QR Code Expired",
+        "screenshot": "Screenshot Detected",
+        "valid": "Valid Coupon",
+        "expiresIn": "Code will be refreshed in {seconds} seconds",
+        "authorizedBy": "Authorized by {venue}",
+        "presentCode": "Present this code to the bartender for scanning",
+        "shareCode": "Share Code"
+    },
+    "scanner": {
+        "title": "Bartender Scanner",
+        "stats": {
+            "redeemed": "Redeemed",
+            "pending": "Pending",
+            "successful": "Converted"
+        },
+        "disclaimer": "Every scan requires a Bill ID to trigger reward billing. Freshness auto-check active (60s).",
+        "placeholder": "Scanning for Atlalli QR codes...",
+        "permissionError": "Camera permission is required to scan QR codes.",
+        "scanningError": "Scanning failed. Please try again or check the QR code.",
+        "results": {
+            "valid": "Valid Coupon",
+            "invalid": "Invalid or Expired QR",
+            "used": "Already Redeemed",
+            "screenshot": "Potential Screenshot Detected",
+            "already_redeemed": "Already Redeemed",
+            "invalid_account": "Valid Google Account not found",
+            "already_redeemed_user": "Promotion already redeemed",
+            "already_redeemed_guest": "Guest user can only redeem one promotion",
+            "not_atlalli": "Not a valid Atlalli coupon",
+            "location_mismatch": "Promotion not available in the current location",
+            "promo_ended": "Promotion already ended",
+            "conversion_prompt_standard": "Remind the user to subscribe to the YouTube channel to take advantage of this coupon.",
+            "conversion_prompt_premium": "Remind the user to become a paid member of the YouTube channel to take advantage of this coupon.",
+            "guest": "Guest Conversion Mode",
+            "payload": "Payload"
+        },
+        "actions": {
+            "enterBill": "Enter Bill ID",
+            "enterEmail": "Enter Guest Email",
+            "nextScan": "Next Scan",
+            "retry": "Retry"
+        }
+    },
+    "coupons": {
+        "title": "My Coupons",
+        "noCoupons": "No promotions available at this location.",
+        "validUntil": "Valid until",
+        "redeem": "Redeem",
+        "redeemed": "Redeemed",
+        "standard": "Standard",
+        "premium": "Premium",
+        "messages": {
+            "guest_new": "As a guest user, you are entitled one redemption of a standard coupon. Thank you for being part of our craft beer community!",
+            "guest_limit": "You have already redeemed one promotion. Please subscribe to our YouTube channel in order to enjoy access to all the standard promotions.",
+            "subscriber": "As a subscriber of our YouTube channel, you have access to all the standard promotions. Thank you for being part of our craft beer community!",
+            "premium": "As a perk of our YouTube channel membership, you have access to both the standard and premium level promotions. Thank you for being part of our craft beer community!"
+        },
+        "tierRequired": "Requires {tier} tier",
+        "ageRestricted": "Age restricted"
+    },
+    "manager": {
+        "title": "Manager Dashboard",
+        "activePromotions": "Active Promotions",
+        "redemptionHistory": "Redemption History",
+        "titleSuggestions": "Beer Suggestions",
+        "filters": {
+            "period": "Period",
+            "tier": "Tier",
+            "promotion": "Promotion"
+        },
+        "stats": {
+            "totalRedemptions": "Total Redemptions",
+            "conversionRate": "Conversion Rate"
+        },
+        "table": {
+            "date": "Year/Month",
+            "tier": "Tier",
+            "promotion": "Promotion",
+            "count": "Redemptions"
+        }
+    },
+    "userRedeem": {
+        "title": "Redeem Promotion",
+        "disclaimer": "Identity Verification Required",
+        "alcoholWarning": "Atlalli promotes alcoholic beverages and requires age verification to proceed.",
+        "description": "To redeem this promotion, please verify your age and identity with Google.",
+        "signInWithGoogle": "Sign in with Google",
+        "verifying": "Verifying your account...",
+        "ageVerified": "Age Verified & Valid Account",
+        "success": "Verification Successful!",
+        "instructions": "Show this QR code to the bartender to complete the redemption.",
+        "alreadyRedeemedStandard": "You have already redeemed a promotion. Subscribe to the YouTube channel to continue!",
+        "alreadyRedeemedPremium": "You have already redeemed a promotion. Become a paid member to continue!",
+        "ageRestricted": "You must be 18 or older to redeem this promotion.",
+        "expired": "This promotion link has expired. Please ask for a fresh code.",
+        "invalid": "Invalid promotion link.",
+        "notRegistered": "Account not found. Please register first."
+    }
+}

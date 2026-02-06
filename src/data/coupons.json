@@ -1,0 +1,174 @@
+[
+    {
+        "id": "promo_001",
+        "title": {
+            "en-US": "First Round Free",
+            "es-MX": "Primera Ronda Gratis"
+        },
+        "description": {
+            "en-US": "Get your first standard craft beer for free when you show this coupon.",
+            "es-MX": "Obtén tu primera cerveza artesanal estándar gratis al mostrar este cupón."
+        },
+        "discount": "100%",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_a",
+            "loc_juarez",
+            "loc_coyoacan",
+            "loc_narvarte"
+        ]
+    },
+    {
+        "id": "promo_002",
+        "title": {
+            "en-US": "2x1 on IPAs",
+            "es-MX": "2x1 en IPAs"
+        },
+        "description": {
+            "en-US": "Buy one IPA and get the second one free all night.",
+            "es-MX": "Compra una IPA y llévate la segunda gratis toda la noche."
+        },
+        "discount": "2x1",
+        "validUntil": "2026-06-30T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_b",
+            "loc_polanco",
+            "loc_centro"
+        ]
+    },
+    {
+        "id": "promo_003",
+        "title": {
+            "en-US": "15% Off Your Table",
+            "es-MX": "15% de Descuento en tu Mesa"
+        },
+        "description": {
+            "en-US": "Enjoy 15% off your total bill including snacks and beers.",
+            "es-MX": "Disfruta un 15% de descuento en tu cuenta total incluyendo botanas y cervezas."
+        },
+        "discount": "15%",
+        "validUntil": "2026-09-15T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_a",
+            "loc_coyoacan",
+            "loc_narvarte"
+        ]
+    },
+    {
+        "id": "promo_004",
+        "title": {
+            "en-US": "Free Craft Sample",
+            "es-MX": "Muestra Artesanal Gratis"
+        },
+        "description": {
+            "en-US": "Try any 4oz sample of our seasonal craft beers.",
+            "es-MX": "Prueba una muestra de 4oz de nuestras cervezas de temporada."
+        },
+        "discount": "Free Sample",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_juarez",
+            "loc_narvarte",
+            "loc_b"
+        ]
+    },
+    {
+        "id": "promo_005",
+        "title": {
+            "en-US": "10% Off Local Pints",
+            "es-MX": "10% Desc en Pintas Locales"
+        },
+        "description": {
+            "en-US": "Support local breweries with 10% off any Mexican draft beer.",
+            "es-MX": "Apoya a las cervecerías locales con un 10% de descuento en barril nacional."
+        },
+        "discount": "10%",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_a",
+            "loc_juarez",
+            "loc_polanco"
+        ]
+    },
+    {
+        "id": "promo_006",
+        "title": {
+            "en-US": "Brewers Choice Match",
+            "es-MX": "Cerveza Especial del Maestro"
+        },
+        "description": {
+            "en-US": "Buy any recommended beer and get a snack on the house.",
+            "es-MX": "Compra cualquier cerveza recomendada y recibe una botana por la casa."
+        },
+        "discount": "Free Snack",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "standard",
+        "sponsorIds": [
+            "loc_coyoacan",
+            "loc_centro",
+            "loc_polanco"
+        ]
+    },
+    {
+        "id": "promo_007",
+        "title": {
+            "en-US": "V.I.P Tasting Tray",
+            "es-MX": "Charola de Degustación V.I.P"
+        },
+        "description": {
+            "en-US": "Exclusive 5-pour flight including rare reserve beers.",
+            "es-MX": "Vuelo exclusivo de 5 muestras incluyendo cervezas de reserva."
+        },
+        "discount": "V.I.P Experience",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "premium",
+        "sponsorIds": [
+            "loc_b",
+            "loc_polanco",
+            "loc_centro"
+        ]
+    },
+    {
+        "id": "promo_008",
+        "title": {
+            "en-US": "Rare Bottle Access",
+            "es-MX": "Acceso a Botellas Raras"
+        },
+        "description": {
+            "en-US": "Unlock access to purchase vault-selection aged stouts and sours.",
+            "es-MX": "Acceso para comprar stouts y sours añejadas de nuestra cava."
+        },
+        "discount": "Exclusive Access",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "premium",
+        "sponsorIds": [
+            "loc_polanco",
+            "loc_centro",
+            "loc_b"
+        ]
+    },
+    {
+        "id": "promo_009",
+        "title": {
+            "en-US": "Secret Menu Unlock",
+            "es-MX": "Desbloqueo de Menú Secreto"
+        },
+        "description": {
+            "en-US": "Access our unlisted tap handle for premium members only.",
+            "es-MX": "Acceso a nuestro tap secreto solo para miembros premium."
+        },
+        "discount": "Secret Tap",
+        "validUntil": "2026-12-31T23:59:59Z",
+        "tier": "premium",
+        "sponsorIds": [
+            "loc_centro",
+            "loc_polanco",
+            "loc_b"
+        ]
+    }
+]

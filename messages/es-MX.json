@@ -1,0 +1,311 @@
+{
+    "common": {
+        "appName": "Atlalli",
+        "tagline": "Descubre tu cerveza perfecta",
+        "loading": "Cargando...",
+        "error": "Error",
+        "success": "Éxito",
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "close": "Cerrar",
+        "save": "Guardar",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "back": "Atrás",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "language": "Idioma",
+        "confirmReset": "¿Limpiar todos los datos del prototipo?"
+    },
+    "auth": {
+        "login": "Ingresar",
+        "logout": "Cerrar Sesión",
+        "selectRole": "Selecciona tu Usuario",
+        "roleSelector": {
+            "minor": "Menor de edad (Age < 18)",
+            "anonymous": "Anónimo",
+            "guest": "Invitado",
+            "subscriber": "Suscriptor",
+            "premium": "Usuario Premium",
+            "bartender": "Bartender",
+            "manager": "Gerente",
+            "super_admin": "Súper Admin"
+        },
+        "accessDenied": "Acceso Denegado",
+        "minorRestriction": "Debes ser mayor de 18 años para acceder a esta aplicación."
+    },
+    "navigation": {
+        "home": "Inicio",
+        "discover": "Descubrir",
+        "profile": "Perfil",
+        "wallet": "Wallet",
+        "scanner": "Scanner",
+        "dashboard": "Panel",
+        "currentLocation": "Lugar Actual",
+        "locationsMenu": "Ubicaciones",
+        "optionsMenu": "Menú",
+        "optionsLabel": "Navegación",
+        "noLocationDetected": "No se detectó bar",
+        "messages": "Mensajes",
+        "resetData": "Reiniciar Datos"
+    },
+    "notifications": {
+        "title": "Centro de Mensajes",
+        "unreadCount": "{count} alertas sin leer",
+        "clearAll": "Limpiar todo",
+        "inboxEmpty": "Bandeja vacía",
+        "new": "NUEVO"
+    },
+    "home": {
+        "subtitle": "Prototipo de Lealtad y Descubrimiento de Cerveza CDMX",
+        "locationInstruction": "Usa el Selector de Ubicación arriba para simular tu posición GPS. Cambia a la pestaña de 'Lugares' abajo para descubrir locales asociados cercanos en el mapa.",
+        "subtitle": "Place of Liquids",
+        "NowStreaming": "Now Streaming",
+        "locationInstruction": "..."
+    },
+    "tasteProfile": {
+        "title": "Tu Perfil de Sabor",
+        "axes": {
+            "bitter": "Amargor",
+            "malt": "Malta",
+            "body": "Cuerpo",
+            "aromatics": "Aromas",
+            "abv": "ABV"
+        },
+        "coldStart": {
+            "title": "Bienvenido a Atlalli",
+            "subtitle": "Vamos a encontrar tu perfil de sabor",
+            "start": "Comenzar",
+            "skip": "Omitir por ahora"
+        },
+        "quiz": {
+            "title": "Crea tu Mapa de Sabor",
+            "familiarity": {
+                "title": "¿Qué tanto conoces de cerveza artesanal?",
+                "level1": "Nuevo en esto",
+                "level1_desc": "Sé lo que me gusta (sabores), pero no los nombres.",
+                "level2": "Ocasional",
+                "level2_desc": "Conozco algunos estilos como IPA o Stout.",
+                "level3": "Conocedor",
+                "level3_desc": "Sé exactamente qué busca mi paladar."
+            },
+            "level1": {
+                "coffee": {
+                    "q": "¿Cómo tomas tu café?",
+                    "black": "Negro / Espresso (Intenso y amargo)",
+                    "creamy": "Con crema / Latte (Suave y ligero)"
+                },
+                "sweets": {
+                    "q": "¿Qué snack prefieres?",
+                    "chocolate": "Chocolate Amargo / Nueces (Tostado)",
+                    "citrus": "Cítricos / Frutas Tropicales (Fresco)"
+                },
+                "intensity": {
+                    "q": "¿Cómo prefieres beber?",
+                    "bold": "Intenso y Complejo (Para saborear)",
+                    "light": "Ligero y Refrescante (Toda la tarde)"
+                },
+                "extraPrompt": {
+                    "q": "¿Quieres responder cuatro preguntas más para obtener mejores recomendaciones?",
+                    "yes": "¡Sí, vamos!",
+                    "no": "No, estoy listo."
+                },
+                "fruit": {
+                    "q": "¿Qué snack prefieres?",
+                    "tropical": "Fruta Tropical / Piña (Brillante)",
+                    "spiced": "Especias / Balsámico (Complejo)"
+                },
+                "bread": {
+                    "q": "¿Aroma matutino favorito?",
+                    "toasted": "Pan Tostado / Café (Tostado)",
+                    "fresh": "Pan Fresco / Granos (Suave)"
+                },
+                "water": {
+                    "q": "¿Cómo prefieres tus bebidas?",
+                    "sparkling": "Efervescente / Seca (Crisp)",
+                    "smooth": "Sedosa / Sin gas (Cremosa)"
+                },
+                "nature": {
+                    "q": "Caminata en...",
+                    "forest": "Bosque de Pinos / Tierra (Amaderado)",
+                    "garden": "Jardín Floral / Cítricos (Frutal)"
+                }
+            },
+            "level2": {
+                "title": "Elige un estilo que disfrutes",
+                "lager": "Lager (Clara y Limpia)",
+                "wheat": "Trigo (Frutal y Cremosa)",
+                "ipa": "IPA (Amarga y Lupulada)",
+                "stout": "Stout (Oscura y Tostada)"
+            },
+            "level3": {
+                "title": "Ajusta tu Vector Sensorial",
+                "instruction": "Mueve los controles para definir tu perfil ideal."
+            },
+            "complete": "Crear mi Mapa"
+        }
+    },
+    "recommendation": {
+        "title": "Recomendado Para Ti",
+        "beers": "Cervezas",
+        "locations": "Lugares",
+        "radius": "Radio de Descubrimiento",
+        "nearby": "{count} Lugares Cercanos",
+        "premiumCount": "{count} Premium",
+        "standardCount": "{count} Estándar",
+        "availablePromotions": "Promociones Disponibles",
+        "venueMatchScore": "Afinidad con el Lugar",
+        "topMatches": "Top 3 Recomendaciones Personalizadas",
+        "premiumPerk": "Beneficio Premium",
+        "activePromo": "Promo Activa",
+        "viewDetails": "Ver Detalles",
+        "yourLocation": "Estás aquí",
+        "similaritySlider": "Nivel de Aventura",
+        "comfortZone": "Mantenme en mi zona de confort",
+        "balanced": "Algo nuevo pero familiar",
+        "adventure": "¡Sorpréndeme!",
+        "notAvailable": "Cerveza No Disponible",
+        "findAnother": "Nueva Recomendación",
+        "showScript": "Guion para Pedir Cerveza",
+        "getMatch": "Obtener Match",
+        "rateADrink": "Calificar Bebida",
+        "includeScript": "Incluir 'Guion para Pedir Cerveza' junto con las Recomendaciones"
+    },
+    "rating": {
+        "title": "Evalúa tu cerveza",
+        "searchPlaceholder": "Busca una cerveza o marca...",
+        "noResults": "¿No encuentras la cerveza? ¡Evalúa un estilo y luego sugiere tu cerveza!",
+        "genericOption": "Evaluar {style}",
+        "suggestLink": "Sugerir una nueva cerveza al catálogo",
+        "dislike": "No me gustó esta cerveza",
+        "like": "Me gustó",
+        "love": "Me encantó",
+        "success": "¡Perfil de sabor actualizado!"
+    },
+    "suggestion": {
+        "title": "Sugerir Cerveza",
+        "subtitle": "Ayúdanos a crecer. Al ser verificada, la añadiremos al catálogo.",
+        "form": {
+            "name": "Nombre de la Cerveza",
+            "brewery": "Cervecería",
+            "style": "Estilo (ej. IPA)",
+            "abv": "ABV (Opcional)",
+            "description": "Descripción (Opcional)",
+            "submit": "Enviar Sugerencia",
+            "required": "Información requerida"
+        },
+        "success": {
+            "title": "¡Sugerencia Recibida!",
+            "message": "Nuestro equipo verificará los detalles. ¡Te daremos crédito como colaborador si se añade!"
+        },
+        "back": "Volver al Inicio"
+    },
+    "location": {
+        "selectLocation": "Seleccionar Ubicación",
+        "currentLocation": "Ubicación Actual",
+        "noLocationDetected": "No se detectó bar",
+        "partnerVenue": "Lugar Asociado",
+        "nonPartner": "No Asociado"
+    },
+    "qr": {
+        "generateCode": "Generar Código QR",
+        "scanCode": "Escanear Código QR",
+        "expired": "Código QR Expirado",
+        "screenshot": "Captura de Pantalla Detectada",
+        "valid": "Cupón Válido",
+        "expiresIn": "El código se actualizará en {seconds} segundos",
+        "authorizedBy": "Autorizado por {venue}",
+        "presentCode": "Presenta este código al bartender para canjearlo",
+        "shareCode": "Compartir Código"
+    },
+    "scanner": {
+        "title": "Escáner de Bartender",
+        "stats": {
+            "redeemed": "Canjeados",
+            "pending": "Pendientes",
+            "successful": "Convertidos"
+        },
+        "disclaimer": "Cada escaneo requiere un ID de Cuenta para activar el cobro de recompensa. Verificación de frescura activa (60s).",
+        "placeholder": "Buscando códigos QR de Atlalli...",
+        "permissionError": "Se requiere permiso de cámara para escanear códigos QR.",
+        "scanningError": "Fallo en el escaneo. Por favor intenta de nuevo o revisa el código QR.",
+        "results": {
+            "valid": "Cupón Válido",
+            "invalid": "QR Inválido o Expirado",
+            "used": "Ya Canjeado",
+            "screenshot": "Posible Captura de Pantalla Detectada",
+            "already_redeemed": "Ya Canjeado",
+            "invalid_account": "Cuenta de Google no válida",
+            "already_redeemed_user": "Promoción ya canjeada",
+            "already_redeemed_guest": "Los invitados solo pueden canjear una promoción",
+            "not_atlalli": "No es un cupón válido de Atlalli",
+            "location_mismatch": "Promoción no disponible en esta ubicación",
+            "promo_ended": "La promoción ha finalizado",
+            "conversion_prompt_standard": "Recordar al usuario suscribirse al canal de YouTube para aprovechar este cupón.",
+            "conversion_prompt_premium": "Recordar al usuario volverse miembro pagado del canal de YouTube para aprovechar este cupón.",
+            "guest": "Modo de Conversión de Invitado",
+            "payload": "Payload"
+        },
+        "actions": {
+            "enterBill": "Ingresar ID de Cuenta",
+            "enterEmail": "Ingresar Correo del Invitado",
+            "nextScan": "Siguiente Escaneo",
+            "retry": "Reintentar"
+        }
+    },
+    "coupons": {
+        "title": "Mis Cupones",
+        "noCoupons": "No hay promociones disponibles en este lugar.",
+        "validUntil": "Válido hasta",
+        "redeem": "Canjear",
+        "redeemed": "Canjeado",
+        "standard": "Estándar",
+        "premium": "Premium",
+        "messages": {
+            "guest_new": "Como usuario invitado, tienes derecho a un canje de un cupón estándar. ¡Gracias por ser parte de nuestra comunidad de cerveza artesanal!",
+            "guest_limit": "Ya has canjeado una promoción. Por favor, suscríbete a nuestro canal de YouTube para disfrutar del acceso a todas las promociones estándar.",
+            "subscriber": "Como suscriptor de nuestro canal de YouTube, tienes acceso a todas las promociones estándar. ¡Gracias por ser parte de nuestra comunidad de cerveza artesanal!",
+            "premium": "Como beneficio de tu membresía de nuestro canal de YouTube, tienes acceso tanto a las promociones de nivel estándar como premium. ¡Gracias por ser parte de nuestra comunidad de cerveza artesanal!"
+        },
+        "tierRequired": "Requiere nivel {tier}",
+        "ageRestricted": "Restringido por edad"
+    },
+    "manager": {
+        "title": "Panel del Gerente",
+        "activePromotions": "Promociones Activas",
+        "redemptionHistory": "Historial de Canjes",
+        "titleSuggestions": "Sugerencias de Cervezas",
+        "filters": {
+            "period": "Periodo",
+            "tier": "Nivel",
+            "promotion": "Promoción"
+        },
+        "stats": {
+            "totalRedemptions": "Total de Canjes",
+            "conversionRate": "Tasa de Conversión"
+        },
+        "table": {
+            "date": "Año/Mes",
+            "tier": "Nivel",
+            "promotion": "Promoción",
+            "count": "Canjes"
+        }
+    },
+    "userRedeem": {
+        "title": "Canjear Promoción",
+        "disclaimer": "Verificación de Identidad Requerida",
+        "alcoholWarning": "Atlalli promueve bebidas alcohólicas y requiere verificación de edad para proceder.",
+        "description": "Para canjear esta promoción, por favor verifica tu edad e identidad con Google.",
+        "signInWithGoogle": "Iniciar sesión con Google",
+        "verifying": "Verificando tu cuenta...",
+        "ageVerified": "Edad Verificada y Cuenta Válida",
+        "success": "¡Verificación Exitosa!",
+        "instructions": "Muestra este código QR al bartender para completar el canje.",
+        "alreadyRedeemedStandard": "Ya has canjeado una promoción. ¡Suscríbete al canal de YouTube para continuar!",
+        "alreadyRedeemedPremium": "Ya has canjeado una promoción. ¡Conviértete en miembro pagado para continuar!",
+        "ageRestricted": "Debes ser mayor de 18 años para canjear esta promoción.",
+        "expired": "Este enlace ha expirado. Por favor solicita un código nuevo.",
+        "invalid": "Enlace de promoción no válido.",
+        "notRegistered": "Cuenta no encontrada. Por favor regístrate primero."
+    }
+}

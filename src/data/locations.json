@@ -1,0 +1,303 @@
+{
+    "prototype_locations": [
+        {
+            "id": "loc_a",
+            "name": "Cielito Lindo Roma",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.4145,
+                "lng": -99.1636
+            },
+            "inventory": [
+                "hercules_republica",
+                "hercules_macanuda",
+                "hercules_super_lupe",
+                "morenos_manguito",
+                "morenos_dale_dale"
+            ],
+            "address": "Roma Norte, CDMX",
+            "description": {
+                "en-US": "Traditional Mexican restaurant with craft beer selection",
+                "es-MX": "Restaurante tradicional mexicano con selección de cerveza artesanal"
+            }
+        },
+        {
+            "id": "loc_b",
+            "name": "Cru Cru Taproom",
+            "type": "sponsor",
+            "tier": "premium",
+            "coordinates": {
+                "lat": 19.4116,
+                "lng": -99.1739
+            },
+            "inventory": [
+                "cru_cru_lager",
+                "cru_cru_porter",
+                "cru_cru_gose",
+                "colima_paramo",
+                "colima_piedra_lisa",
+                "falling_piano_coahuila"
+            ],
+            "address": "Condesa, CDMX",
+            "description": {
+                "en-US": "Craft brewery taproom in the heart of Condesa",
+                "es-MX": "Taproom de cervecería artesanal en el corazón de la Condesa"
+            }
+        },
+        {
+            "id": "loc_juarez",
+            "name": "Hop The Beer Experience",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.4284,
+                "lng": -99.1578
+            },
+            "inventory": [
+                "principia_ipa",
+                "cyprez_ipa",
+                "insurgente_lupulosa",
+                "fauna_lycan"
+            ],
+            "address": "Juárez, CDMX",
+            "description": {
+                "en-US": "Modern taproom with extensive local selection",
+                "es-MX": "Taproom moderno con extensa selección local"
+            }
+        },
+        {
+            "id": "loc_polanco",
+            "name": "The Beer Box Polanco",
+            "type": "sponsor",
+            "tier": "premium",
+            "coordinates": {
+                "lat": 19.4326,
+                "lng": -99.1912
+            },
+            "inventory": [
+                "duvel",
+                "delirium_tremens",
+                "principia_asimetria",
+                "fauna_mala_vida",
+                "monstruo_agua_blanca"
+            ],
+            "address": "Polanco, CDMX",
+            "description": {
+                "en-US": "Boutique beer shop and tasting room",
+                "es-MX": "Tienda boutique de cerveza y sala de degustación"
+            }
+        },
+        {
+            "id": "loc_coyoacan",
+            "name": "Jardin del Pulpo",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.3497,
+                "lng": -99.1620
+            },
+            "inventory": [
+                "colima_paramo",
+                "victoria",
+                "minerva_viena",
+                "hercules_republica"
+            ],
+            "address": "Coyoacán, CDMX",
+            "description": {
+                "en-US": "Traditional garden in the historic south",
+                "es-MX": "Jardín tradicional en el sur histórico"
+            }
+        },
+        {
+            "id": "loc_narvarte",
+            "name": "Drunkendog Narvarte",
+            "groupId": "drunkendog",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.3977,
+                "lng": -99.1541
+            },
+            "inventory": [
+                "falling_piano_ladrando",
+                "wendlandt_vaquita",
+                "cyprez_stout",
+                "principia_asimetria"
+            ],
+            "address": "Narvarte, CDMX",
+            "description": {
+                "en-US": "Dog-friendly neighborhood craft bar",
+                "es-MX": "Bar artesanal de barrio amigable con mascotas"
+            }
+        },
+        {
+            "id": "loc_drunkendog_condesa",
+            "name": "Drunkendog Condesa",
+            "groupId": "drunkendog",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.4120,
+                "lng": -99.1690
+            },
+            "inventory": [
+                "falling_piano_ladrando",
+                "principia_ipa",
+                "principia_asimetria"
+            ],
+            "address": "Condesa, CDMX",
+            "description": {
+                "en-US": "Craft beer and street food in Condesa",
+                "es-MX": "Cerveza artesanal y comida callejera en la Condesa"
+            }
+        },
+        {
+            "id": "loc_drunkendog_tlalpan",
+            "name": "Drunkendog Tlalpan",
+            "groupId": "drunkendog",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.2887,
+                "lng": -99.1620
+            },
+            "inventory": [
+                "hercules_republica",
+                "morenos_manguito",
+                "principia_ipa"
+            ],
+            "address": "Tlalpan, CDMX",
+            "description": {
+                "en-US": "Southside craft beer destination",
+                "es-MX": "Destino de cerveza artesanal al sur de la ciudad"
+            }
+        },
+        {
+            "id": "loc_falling_piano_roma",
+            "name": "Falling Piano Roma",
+            "groupId": "falling_piano",
+            "type": "sponsor",
+            "tier": "premium",
+            "coordinates": {
+                "lat": 19.4192,
+                "lng": -99.1585
+            },
+            "inventory": [
+                "falling_piano_coahuila",
+                "falling_piano_ladrando",
+                "cru_cru_gose"
+            ],
+            "address": "Roma Norte, CDMX",
+            "description": {
+                "en-US": "Original brewpub with an actual piano hanging from the ceiling",
+                "es-MX": "Brewpub original con un piano real colgando del techo"
+            }
+        },
+        {
+            "id": "loc_falling_piano_bodega",
+            "name": "Falling Piano Bodega",
+            "groupId": "falling_piano",
+            "type": "sponsor",
+            "tier": "standard",
+            "coordinates": {
+                "lat": 19.4440,
+                "lng": -99.1760
+            },
+            "inventory": [
+                "falling_piano_coahuila",
+                "falling_piano_ladrando"
+            ],
+            "address": "Anáhuac, CDMX",
+            "description": {
+                "en-US": "Production facility and tasting room",
+                "es-MX": "Planta de producción y sala de degustación"
+            }
+        },
+        {
+            "id": "loc_centro",
+            "name": "Terraza Catedral",
+            "type": "sponsor",
+            "tier": "premium",
+            "coordinates": {
+                "lat": 19.4326,
+                "lng": -99.1332
+            },
+            "inventory": [
+                "cru_cru_gose",
+                "insurgente_tiniebla",
+                "erdinger_weiss",
+                "fauna_penelope"
+            ],
+            "address": "Centro Histórico, CDMX",
+            "description": {
+                "en-US": "Rooftop bar with historic views",
+                "es-MX": "Bar en azotea con vistas históricas"
+            }
+        },
+        {
+            "id": "loc_c",
+            "name": "Generic Pub Condesa",
+            "type": "prospect",
+            "tier": null,
+            "coordinates": {
+                "lat": 19.4100,
+                "lng": -99.1700
+            },
+            "inventory": [],
+            "address": "Condesa, CDMX",
+            "description": {
+                "en-US": "Non-partner bar - sensory script mode",
+                "es-MX": "Bar no asociado - modo de script sensorial"
+            }
+        },
+        {
+            "id": "loc_d",
+            "name": "Street View / Out of Range",
+            "type": "none",
+            "tier": null,
+            "coordinates": {
+                "lat": 19.4000,
+                "lng": -99.2000
+            },
+            "inventory": [],
+            "address": "Unknown Location",
+            "description": {
+                "en-US": "Discovery mode",
+                "es-MX": "Modo descubrimiento"
+            }
+        },
+        {
+            "id": "loc_sv2",
+            "name": "Street View Santa Fe",
+            "type": "none",
+            "tier": null,
+            "coordinates": {
+                "lat": 19.3620,
+                "lng": -99.2550
+            },
+            "inventory": [],
+            "address": "Santa Fe, CDMX",
+            "description": {
+                "en-US": "Discovery mode from the west",
+                "es-MX": "Modo descubrimiento desde el poniente"
+            }
+        },
+        {
+            "id": "loc_sv3",
+            "name": "Street View Tlalpan",
+            "type": "none",
+            "tier": null,
+            "coordinates": {
+                "lat": 19.2900,
+                "lng": -99.1600
+            },
+            "inventory": [],
+            "address": "Tlalpan, CDMX",
+            "description": {
+                "en-US": "Discovery mode from the south",
+                "es-MX": "Modo descubrimiento desde el sur"
+            }
+        }
+    ]
+}

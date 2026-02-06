@@ -1,0 +1,327 @@
+{
+    "system_metadata": {
+        "version": "1.2",
+        "last_updated": "2026-01-04",
+        "region": "Mexico City & Metropolitan Area",
+        "total_entries": 85
+    },
+    "beers": {
+        "--- CDMX LOCAL CRAFT ---": {},
+        "hercules_republica": {
+            "brand_name": "República",
+            "brewery": "Hércules",
+            "style_ref": "1A"
+        },
+        "hercules_macanuda": {
+            "brand_name": "Macanuda (Brown Ale)",
+            "brewery": "Hércules",
+            "style_ref": "13C"
+        },
+        "hercules_super_lupe": {
+            "brand_name": "Súper Lupe (IPA)",
+            "brewery": "Hércules",
+            "style_ref": "21A"
+        },
+        "morenos_manguito": {
+            "brand_name": "Manguito",
+            "brewery": "Morenos",
+            "style_ref": "21A",
+            "override_vector": {
+                "aromatics": 0.98
+            }
+        },
+        "morenos_dale_dale": {
+            "brand_name": "Dale Dale (Pale Ale)",
+            "brewery": "Morenos",
+            "style_ref": "18B"
+        },
+        "cru_cru_lager": {
+            "brand_name": "American Lager",
+            "brewery": "Cru Cru",
+            "style_ref": "1A"
+        },
+        "cru_cru_porter": {
+            "brand_name": "Porter",
+            "brewery": "Cru Cru",
+            "style_ref": "13C"
+        },
+        "cru_cru_gose": {
+            "brand_name": "Gose Sal de Gusano",
+            "brewery": "Cru Cru",
+            "style_ref": "25B",
+            "override_vector": {
+                "aromatics": 0.9
+            }
+        },
+        "falling_piano_coahuila": {
+            "brand_name": "Coahuila 99",
+            "brewery": "Falling Piano",
+            "style_ref": "7B"
+        },
+        "falling_piano_ladrando": {
+            "brand_name": "Tu Perro Está Ladrando",
+            "brewery": "Falling Piano",
+            "style_ref": "21A"
+        },
+        "monstruo_agua_blanca": {
+            "brand_name": "Blanca de Maguey",
+            "brewery": "Monstruo de Agua",
+            "style_ref": "10A"
+        },
+        "cyprez_ipa": {
+            "brand_name": "IPA",
+            "brewery": "Cyprez",
+            "style_ref": "21A"
+        },
+        "cyprez_stout": {
+            "brand_name": "Stout",
+            "brewery": "Cyprez",
+            "style_ref": "20B"
+        },
+        "principia_asimetria": {
+            "brand_name": "Asimetría",
+            "brewery": "Principia",
+            "style_ref": "16A"
+        },
+        "principia_ipa": {
+            "brand_name": "American IPA",
+            "brewery": "Principia",
+            "style_ref": "21A"
+        },
+        "--- NATIONAL CRAFT POWERHOUSES ---": {},
+        "fauna_lycan": {
+            "brand_name": "Lycan Lupus",
+            "brewery": "Fauna",
+            "style_ref": "21A"
+        },
+        "fauna_penelope": {
+            "brand_name": "Penélope",
+            "brewery": "Fauna",
+            "style_ref": "20B"
+        },
+        "fauna_mala_vida": {
+            "brand_name": "Mala Vida",
+            "brewery": "Fauna",
+            "style_ref": "25B"
+        },
+        "insurgente_lupulosa": {
+            "brand_name": "La Lupulosa",
+            "brewery": "Insurgente",
+            "style_ref": "21A"
+        },
+        "insurgente_tiniebla": {
+            "brand_name": "Tiniebla",
+            "brewery": "Insurgente",
+            "style_ref": "10A"
+        },
+        "wendlandt_vaquita": {
+            "brand_name": "Vaquita Marina",
+            "brewery": "Wendlandt",
+            "style_ref": "18B"
+        },
+        "wendlandt_perro_del_mar": {
+            "brand_name": "Perro del Mar",
+            "brewery": "Wendlandt",
+            "style_ref": "21A"
+        },
+        "wendlandt_foca_parlante": {
+            "brand_name": "Foca Parlante",
+            "brewery": "Wendlandt",
+            "style_ref": "20B"
+        },
+        "colima_paramo": {
+            "brand_name": "Páramo",
+            "brewery": "Colima",
+            "style_ref": "18B"
+        },
+        "colima_piedra_lisa": {
+            "brand_name": "Piedra Lisa",
+            "brewery": "Colima",
+            "style_ref": "18B",
+            "override_vector": {
+                "abv": 0.3
+            }
+        },
+        "colima_ticus": {
+            "brand_name": "Ticus",
+            "brewery": "Colima",
+            "style_ref": "13C"
+        },
+        "minerva_pale_ale": {
+            "brand_name": "Pale Ale",
+            "brewery": "Minerva",
+            "style_ref": "18B"
+        },
+        "minerva_stout": {
+            "brand_name": "Stout",
+            "brewery": "Minerva",
+            "style_ref": "20B"
+        },
+        "minerva_viena": {
+            "brand_name": "Viena",
+            "brewery": "Minerva",
+            "style_ref": "7B"
+        },
+        "tempus_dorada": {
+            "brand_name": "Tempus Dorada",
+            "brewery": "Primus",
+            "style_ref": "1A"
+        },
+        "tempus_doble": {
+            "brand_name": "Tempus Doble Malta",
+            "brewery": "Primus",
+            "style_ref": "7B"
+        },
+        "jabali_bock": {
+            "brand_name": "Jabalí Bock",
+            "brewery": "Primus",
+            "style_ref": "7B",
+            "override_vector": {
+                "abv": 0.7
+            }
+        },
+        "--- IMPORTED CRAFT & CLASSICS ---": {},
+        "guinness_draught": {
+            "brand_name": "Guinness Draught",
+            "brewery": "Guinness",
+            "style_ref": "16A"
+        },
+        "erdinger_weiss": {
+            "brand_name": "Erdinger Weissbier",
+            "brewery": "Erdinger",
+            "style_ref": "10A"
+        },
+        "delirium_tremens": {
+            "brand_name": "Delirium Tremens",
+            "brewery": "Huyghe",
+            "style_ref": "25B"
+        },
+        "delirium_nocturnum": {
+            "brand_name": "Delirium Nocturnum",
+            "brewery": "Huyghe",
+            "style_ref": "25B",
+            "override_vector": {
+                "malt": 0.8
+            }
+        },
+        "duvel": {
+            "brand_name": "Duvel",
+            "brewery": "Duvel Moortgat",
+            "style_ref": "25B"
+        },
+        "stella_artois": {
+            "brand_name": "Stella Artois",
+            "brewery": "AB InBev",
+            "style_ref": "1A"
+        },
+        "heineken": {
+            "brand_name": "Heineken",
+            "brewery": "Heineken",
+            "style_ref": "1A"
+        },
+        "michelob_ultra": {
+            "brand_name": "Michelob Ultra",
+            "brewery": "AB InBev",
+            "style_ref": "1A",
+            "override_vector": {
+                "body": 0.05
+            }
+        },
+        "--- COMMERCIAL MEXICAN (ALL TIERS) ---": {},
+        "corona_extra": {
+            "brand_name": "Corona Extra",
+            "brewery": "Modelo",
+            "style_ref": "1A"
+        },
+        "victoria": {
+            "brand_name": "Victoria",
+            "brewery": "Modelo",
+            "style_ref": "1A",
+            "override_vector": {
+                "malt": 0.35
+            }
+        },
+        "modelo_especial": {
+            "brand_name": "Modelo Especial",
+            "brewery": "Modelo",
+            "style_ref": "1A"
+        },
+        "negra_modelo": {
+            "brand_name": "Negra Modelo",
+            "brewery": "Modelo",
+            "style_ref": "13C"
+        },
+        "pacifico": {
+            "brand_name": "Pacífico",
+            "brewery": "Modelo",
+            "style_ref": "1A"
+        },
+        "indio": {
+            "brand_name": "Indio",
+            "brewery": "Heineken",
+            "style_ref": "1A",
+            "override_vector": {
+                "malt": 0.4
+            }
+        },
+        "xx_lager": {
+            "brand_name": "Dos Equis Lager",
+            "brewery": "Heineken",
+            "style_ref": "1A"
+        },
+        "xx_ambar": {
+            "brand_name": "Dos Equis Ámbar",
+            "brewery": "Heineken",
+            "style_ref": "7B"
+        },
+        "bohemia_clara": {
+            "brand_name": "Bohemia Clara",
+            "brewery": "Heineken",
+            "style_ref": "1A",
+            "override_vector": {
+                "bitter": 0.3
+            }
+        },
+        "bohemia_oscura": {
+            "brand_name": "Bohemia Oscura",
+            "brewery": "Heineken",
+            "style_ref": "7B"
+        },
+        "tecate_light": {
+            "brand_name": "Tecate Light",
+            "brewery": "Heineken",
+            "style_ref": "1A"
+        },
+        "carta_blanca": {
+            "brand_name": "Carta Blanca",
+            "brewery": "Heineken",
+            "style_ref": "1A"
+        },
+        "--- GENERIC FALLBACKS (SAFETY NET) ---": {},
+        "generic_lager_light": {
+            "brand_name": "Generic Light Lager",
+            "brewery": "House/Generic",
+            "style_ref": "1A"
+        },
+        "generic_pale_ale": {
+            "brand_name": "Generic Pale Ale",
+            "brewery": "House/Generic",
+            "style_ref": "18B"
+        },
+        "generic_ipa": {
+            "brand_name": "Generic IPA",
+            "brewery": "House/Generic",
+            "style_ref": "21A"
+        },
+        "generic_stout": {
+            "brand_name": "Generic Stout",
+            "brewery": "House/Generic",
+            "style_ref": "20B"
+        },
+        "generic_amber": {
+            "brand_name": "Generic Amber Ale",
+            "brewery": "House/Generic",
+            "style_ref": "7B"
+        }
+    }
+}

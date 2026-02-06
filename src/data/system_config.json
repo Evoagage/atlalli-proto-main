@@ -1,0 +1,205 @@
+{
+    "system_metadata": {
+        "version": "1.0",
+        "last_updated": "2026-01-16",
+        "environment": "prototype",
+        "base_url": "https://192.168.0.114:3000"
+    },
+    "taste_profile": {
+        "evolution_parameter_n": 10,
+        "description": "Number of samples used in the damped moving average formula: T_new = T_old + (Input - T_old) / N",
+        "editable_by": "super_admin_only"
+    },
+    "billing": {
+        "standard_coupon_fee_usd": 3.00,
+        "premium_coupon_fee_usd": 5.00,
+        "currency": "USD",
+        "editable_by": "super_admin_only"
+    },
+    "qr_security": {
+        "expiration_seconds": 60,
+        "signature_algorithm": "HMAC-SHA256",
+        "description": "QR codes older than this threshold are flagged as screenshots"
+    },
+    "recommendation": {
+        "default_match_count": 3,
+        "similarity_slider_ranges": {
+            "comfort_zone": {
+                "min": 0,
+                "max": 30,
+                "description": "Stay in my comfort zone"
+            },
+            "balanced": {
+                "min": 31,
+                "max": 70,
+                "description": "Something new but familiar"
+            },
+            "adventure": {
+                "min": 71,
+                "max": 100,
+                "description": "Surprise me / I'm feeling lucky"
+            }
+        }
+    },
+    "localization": {
+        "supported_locales": [
+            "en-US",
+            "es-MX"
+        ],
+        "default_locale": "en-US",
+        "fallback_locale": "en-US"
+    },
+    "staff_rewards": {
+        "conversion_goal_default": 10,
+        "description": "Default number of guest-to-subscriber conversions required for staff reward"
+    },
+    "conversational_thresholds": {
+        "description": "Thresholds for mapping numerical taste values to conversational descriptors. Configurable by super-admin only.",
+        "editable_by": "super_admin_only",
+        "bitter": [
+            {
+                "min": 0.0,
+                "max": 0.3,
+                "key": "BITTER_LOW",
+                "labels": {
+                    "en-US": "Smooth and Mellow",
+                    "es-MX": "suave y ligera"
+                }
+            },
+            {
+                "min": 0.3,
+                "max": 0.6,
+                "key": "BITTER_MED",
+                "labels": {
+                    "en-US": "Balanced Bite",
+                    "es-MX": "amargor balanceado"
+                }
+            },
+            {
+                "min": 0.6,
+                "max": 1.0,
+                "key": "BITTER_HIGH",
+                "labels": {
+                    "en-US": "Sharp and Hoppy",
+                    "es-MX": "amargor marcado y muy lupulada"
+                }
+            }
+        ],
+        "malt": [
+            {
+                "min": 0.0,
+                "max": 0.35,
+                "key": "MALT_LIGHT",
+                "labels": {
+                    "en-US": "Crisp and Bready",
+                    "es-MX": "refrescante con notas de pan"
+                }
+            },
+            {
+                "min": 0.35,
+                "max": 0.65,
+                "key": "MALT_MED",
+                "labels": {
+                    "en-US": "Toasty and Caramel",
+                    "es-MX": "tostada con notas de caramelo"
+                }
+            },
+            {
+                "min": 0.65,
+                "max": 1.0,
+                "key": "MALT_DARK",
+                "labels": {
+                    "en-US": "Coffee and Chocolate",
+                    "es-MX": "notas de café o chocolate"
+                }
+            }
+        ],
+        "body": [
+            {
+                "min": 0.0,
+                "max": 0.35,
+                "key": "BODY_LIGHT",
+                "labels": {
+                    "en-US": "Light and Thirst-Quenching",
+                    "es-MX": "ligera y refrescante"
+                }
+            },
+            {
+                "min": 0.35,
+                "max": 0.65,
+                "key": "BODY_MED",
+                "labels": {
+                    "en-US": "Smooth Mouthfeel",
+                    "es-MX": "sedosa y con cuerpo medio"
+                }
+            },
+            {
+                "min": 0.65,
+                "max": 1.0,
+                "key": "BODY_HIGH",
+                "labels": {
+                    "en-US": "Full and Creamy",
+                    "es-MX": "con mucho cuerpo y cremosa"
+                }
+            }
+        ],
+        "aromatics": [
+            {
+                "min": 0.0,
+                "max": 0.3,
+                "key": "AROMA_CLEAN",
+                "labels": {
+                    "en-US": "Clean and Neutral",
+                    "es-MX": "perfil limpio y neutra"
+                }
+            },
+            {
+                "min": 0.3,
+                "max": 0.7,
+                "key": "AROMA_COMPLEX",
+                "labels": {
+                    "en-US": "Fruity and Spiced",
+                    "es-MX": "frutal y especiada"
+                }
+            },
+            {
+                "min": 0.7,
+                "max": 1.0,
+                "key": "AROMA_FUNK",
+                "labels": {
+                    "en-US": "Earthy and Floral",
+                    "es-MX": "con notas de tierra o florales"
+                }
+            }
+        ],
+        "abv": [
+            {
+                "min": 0.0,
+                "max": 0.35,
+                "key": "ABV_LOW",
+                "labels": {
+                    "en-US": "Sessionable and Light",
+                    "es-MX": "ligera para toda la tarde"
+                }
+            },
+            {
+                "min": 0.35,
+                "max": 0.65,
+                "key": "ABV_MED",
+                "labels": {
+                    "en-US": "Standard Strength",
+                    "es-MX": "graduación estándar"
+                }
+            },
+            {
+                "min": 0.65,
+                "max": 1.0,
+                "key": "ABV_HIGH",
+                "labels": {
+                    "en-US": "Strong and Warming",
+                    "es-MX": "intensa y cálida"
+                }
+            }
+        ]
+    }
+}
