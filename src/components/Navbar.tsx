@@ -90,9 +90,7 @@ export default function Navbar() {
 
     const navLinks = [
 
-        ...(mounted && canAccess(session, currentLocation, 'scanner')
-            ? [{ name: t('scanner'), path: `/${locale}/scanner` }]
-            : []),
+
         ...(mounted && canAccess(session, currentLocation, 'manager')
             ? [{ name: t('dashboard'), path: `/${locale}/manager` }]
             : []),

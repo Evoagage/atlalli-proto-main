@@ -1,29 +1,48 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useParams } from 'next/navigation';
+import { useStore } from '@/store/useStore'; // Import the store hook
+import { canAccess } from '@/utils/auth';     // Import your security logic
 
 export default function BotNav() {
   const pathname = usePathname();
   const params = useParams();
   
-  // Get the current language (default to 'es' if missing)
-  const locale = params.locale || 'es';
+  // 1. Get User Session and Location from Store
+  // We use 'session' because that is the variable name in your useStore.ts
+  const { currentLocation, session } = useStore();
+
+  // 2. Hydration Fix
+  // Since 'session' is persisted in localStorage, we wait for the component 
+  // to mount on the client before checking permissions to avoid server/client mismatch errors.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  // 3. Determine Access
+  // We check if the user has 'scanner' permission (which includes managers & bartenders)
+  // We only run this check if the component is mounted to ensure we have the latest session data.
+  const showStaffOption = mounted && canAccess(session, currentLocation, 'scanner');
+
+  // Handle locale safely (it can be a string or array in Next.js)
+  const locale = (Array.isArray(params.locale) ? params.locale[0] : params.locale) || 'es';
 
   // Helper to check active state
-  // We check if the pathname ends with the path to avoid false positives with partial matches
   const isActive = (path: string) => {
-    // e.g. /es/radar === /es/radar
+    // Exact match logic to avoid partial matches (e.g., /radar matching /radar-settings)
+    // We check both with and without trailing slash
     return pathname === `/${locale}${path}` || pathname === `/${locale}${path}/`; 
   };
 
+  // 4. Define Navigation Items
   const navItems = [
     { name: 'HOME', icon: 'grid_view', path: '/' },
     { name: 'RADAR', icon: 'map', path: '/radar' },
     { name: 'PREFS', icon: 'tune', path: '/prefs' },
     { name: 'WALLET', icon: 'qr_code', path: '/coupons' },
-    { name: 'STAFF', icon: 'shield_person', path: '/scanner' },
+    // Only include this item if the user has permission
+    ...(showStaffOption ? [{ name: 'STAFF', icon: 'shield_person', path: '/scanner' }] : []),
   ];
 
   return (
@@ -31,7 +50,7 @@ export default function BotNav() {
       {navItems.map((item) => (
         <Link 
           key={item.name} 
-          href={`/${locale}${item.path}`} // Dynamic locale injection
+          href={`/${locale}${item.path}`}
           className="flex flex-col items-center justify-center w-16 h-full gap-1 group"
         >
           <span className={`material-symbols-outlined transition-colors text-2xl ${
