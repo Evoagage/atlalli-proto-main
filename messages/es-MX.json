@@ -59,9 +59,11 @@
     "home": {
         "subtitle": "Prototipo de Lealtad y Descubrimiento de Cerveza CDMX",
         "locationInstruction": "Usa el Selector de Ubicación arriba para simular tu posición GPS. Cambia a la pestaña de 'Lugares' abajo para descubrir locales asociados cercanos en el mapa.",
-        "subtitle": "Place of Liquids",
-        "NowStreaming": "Now Streaming",
-        "locationInstruction": "..."
+        "subtitle": "El lugar de la bebida",
+        "NowStreaming": "Transmisión en Vivo",
+        "locationInstruction": "...",
+        "latestEpisodes": "Últimos Episodios",
+        "nearbyBars": "Bares Cercanos"
     },
     "tasteProfile": {
         "title": "Tu Perfil de Sabor",
@@ -307,5 +309,11 @@
         "expired": "Este enlace ha expirado. Por favor solicita un código nuevo.",
         "invalid": "Enlace de promoción no válido.",
         "notRegistered": "Cuenta no encontrada. Por favor regístrate primero."
+    },
+    "ErrorSolvers": {
+        "home.calibrateProfile": "Perfil de calibración de la página principal",
+        "locationAccess": "Please allow location access to discover nearby venues and personalized recommendations.",
+        "networkIssue": "Check your internet connection and try again.",
+        "unexpectedError": "An unexpected error occurred. Please refresh the page or contact support if the issue persists."
     }
 }

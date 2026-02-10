@@ -4,13 +4,10 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useStore } from '@/store/useStore';
 import {
-    Beer,
     ChevronRight,
     Coffee,
     Flame,
     Flower2,
-    Info,
-    RotateCcw,
     Sparkles,
     Trophy,
     Waves,
@@ -28,7 +25,7 @@ type QuizLevel = 0 | 1 | 2 | 3;
 
 export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProps) {
     const t = useTranslations('tasteProfile');
-    const { tasteVector, updateTasteVector, setTasteVector, incrementSampleCount } = useStore();
+    const { setTasteVector, incrementSampleCount } = useStore();
 
     const [level, setLevel] = useState<QuizLevel>(0);
     const [step, setStep] = useState(0);
@@ -44,7 +41,6 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
 
     const finishQuiz = (finalVector: TasteVector, sampleWeight: number = 5) => {
         setTasteVector(finalVector);
-        // We increment sample count specifically to move away from "cold start"
         for (let i = 0; i < sampleWeight; i++) incrementSampleCount();
         onComplete();
     };
@@ -52,7 +48,8 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
     // --- LEVEL 0: FAMILIARITY GATE ---
     if (level === 0) {
         return (
-            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 justify-center max-w-md mx-auto">
+            // FIX: Added 'pb-28' to clear the Bottom Navigation
+            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 pb-28 justify-center max-w-md mx-auto">
                 <div className="mb-12 text-center space-y-2">
                     <h2 className="text-3xl font-heading uppercase tracking-tighter text-liquid-gold">{t('quiz.title')}</h2>
                     <p className="text-sm text-bone-white/60">{t('quiz.familiarity.title')}</p>
@@ -83,7 +80,6 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
 
     // --- LEVEL 1: ENTRY (FLAVOR ANALOGIES) ---
     if (level === 1) {
-
         const baseQuestions = [
             {
                 key: 'coffee',
@@ -138,7 +134,7 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
             },
             {
                 key: 'nature',
-                icon: <Trophy size={32} />, // Using Trophy as a generic achievement/discovery icon
+                icon: <Trophy size={32} />,
                 options: [
                     { label: t('quiz.level1.nature.forest'), vector: { aromatics: 0.7, bitter: 0.6 } },
                     { label: t('quiz.level1.nature.garden'), vector: { aromatics: 0.9, body: 0.3 } }
@@ -152,11 +148,12 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
             const nextVector = { ...tempVector, ...v };
             setTempVector(nextVector);
 
-            if (step < baseQuestions.length - 1) {
-                setStep(step + 1);
-            } else if (step === baseQuestions.length - 1 && !isExtraMode && !showExtraPrompt) {
-                setShowExtraPrompt(true);
-            } else if (isExtraMode && step < questions.length - 1) {
+            if (step < questions.length - 1) {
+                // If we are at the end of base questions and not in extra mode, ask the prompt
+                if (step === baseQuestions.length - 1 && !isExtraMode && !showExtraPrompt) {
+                     setShowExtraPrompt(true);
+                     return;
+                }
                 setStep(step + 1);
             } else {
                 finishQuiz(nextVector, isExtraMode ? 8 : 5);
@@ -165,7 +162,7 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
 
         if (showExtraPrompt) {
             return (
-                <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-8 justify-center max-w-md mx-auto space-y-8">
+                <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-8 pb-28 justify-center max-w-md mx-auto space-y-8">
                     <div className="p-4 bg-liquid-gold/10 rounded-full w-fit mx-auto">
                         <Trophy className="text-liquid-gold" size={48} />
                     </div>
@@ -197,7 +194,8 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
         const currentQ = questions[step];
 
         return (
-            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-8 justify-between max-w-md mx-auto">
+            // FIX: Added 'pb-28' here. This pushes the bottom content up so it's not hidden.
+            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-8 pb-28 justify-between max-w-md mx-auto">
                 <div className="flex justify-between items-center">
                     <span className="text-[10px] uppercase tracking-widest text-bone-white/40">Step {step + 1} of {questions.length}</span>
                     <button onClick={onClose} className="p-2 text-white/20 hover:text-white"><X size={20} /></button>
@@ -237,14 +235,16 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
         ];
 
         const handleStyleSelect = (styleId: string) => {
-            const style = (bjcpDictionary.styles as any)[styleId];
+            // @ts-expect-error: Dictionary is untyped JSON
+            const style = bjcpDictionary.styles[styleId];
             if (style) {
                 finishQuiz(style.sensory_vector, 5);
             }
         };
 
         return (
-            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 justify-center max-w-md mx-auto">
+            // FIX: Added 'pb-28' here
+            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 pb-28 justify-center max-w-md mx-auto">
                 <div className="mb-12 text-center space-y-2">
                     <h2 className="text-2xl font-heading uppercase tracking-tighter text-liquid-gold">{t('quiz.level2.title')}</h2>
                 </div>
@@ -282,7 +282,8 @@ export default function DiscoveryQuiz({ onComplete, onClose }: DiscoveryQuizProp
         };
 
         return (
-            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 overflow-y-auto max-w-md mx-auto">
+            // FIX: Added 'pb-28' here for the scrollable container
+            <div className="flex flex-col h-full bg-obsidian-night text-bone-white p-6 pb-28 overflow-y-auto max-w-md mx-auto">
                 <div className="mt-8 mb-12 space-y-2">
                     <h2 className="text-2xl font-heading uppercase tracking-tighter text-liquid-gold">{t('quiz.level3.title')}</h2>
                     <p className="text-[10px] text-bone-white/40 uppercase tracking-widest">{t('quiz.level3.instruction')}</p>

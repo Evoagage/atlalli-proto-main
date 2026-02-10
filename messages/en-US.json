@@ -59,9 +59,11 @@
     "home": {
         "subtitle": "CDMX Beer Discovery & Loyalty Prototype",
         "locationInstruction": "Use the Location Selector above to mock your GPS position. Switch to the 'Locations' tab below to discover nearby partner venues on the map.",
-        "subtitle": "Place of Liquids",
-        "NowStreaming": "Transmisión en Vivo",
-        "locationInstruction": "..."
+        "subtitle": "Where beers meet people",
+        "NowStreaming": "Now straming on YouTube: ",
+        "locationInstruction": "...",
+        "latestEpisodes": "Latest Episodes",
+        "nearbyBars": "Bars Near Me"
     },
     "tasteProfile": {
         "title": "Your Taste Profile",
@@ -307,5 +309,11 @@
         "expired": "This promotion link has expired. Please ask for a fresh code.",
         "invalid": "Invalid promotion link.",
         "notRegistered": "Account not found. Please register first."
+    },
+    "ErrorSolvers": {
+        "home.calibrateProfile": "Home calibrate profile",
+        "locationAccess": "Please allow location access to discover nearby venues and personalized recommendations.",
+        "networkIssue": "Check your internet connection and try again.",
+        "unexpectedError": "An unexpected error occurred. Please refresh the page or contact support if the issue persists."
     }
 }
